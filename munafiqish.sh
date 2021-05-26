@@ -330,10 +330,10 @@ if [ "$action" == "setup" ]; then
   fi
   setup
 elif [ "$action" == "stop" ]; then
-  echo "This command is depreciated. Please run: sudo bash munafiqish.sh -a open"
+  echo "This command is depreciated. Please run: sudo bash d2firewall.sh -a open"
   open
 elif [ "$action" == "start" ]; then
-  echo "This command is depreciated. Please run: sudo bash munafiqish.sh -a close"
+  echo "This command is depreciated. Please run: sudo bash d2firewall.sh -a close"
   close
 elif [ "$action" == "open" ]; then
   open
@@ -380,8 +380,8 @@ elif [ "$action" == "list" ]; then
   # list the ids added to the data.txt file
   tail -n +5 data.txt | cat -n
 elif [ "$action" == "update" ]; then
-  wget -q https://raw.githubusercontent.com/cloudex99/Destiny-2-Matchmaking-Firewall/main/munafiqish.sh -O ./munafiqish.sh
-  chmod +x ./munafiqish.sh
+  wget -q https://raw.githubusercontent.com/cloudex99/Destiny-2-Matchmaking-Firewall/main/d2firewall.sh -O ./d2firewall.sh
+  chmod +x ./d2firewall.sh
   echo -e "${GREEN}Script update complete."
   echo -e "Please rerun the initial setup to avoid any issues.${NC}"
 elif [ "$action" == "load" ]; then
